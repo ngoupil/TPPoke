@@ -11,10 +11,12 @@ import { Router } from '@angular/router';
 export class HomePage {
 
     constructor(private router: Router, private DataTransfer: DataTransfertServiceService) {
+        
 
     }
 
     goToList() {
+       
         this.router.navigate(['/list']);
     }
     goToFight() {

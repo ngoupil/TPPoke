@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Pokemon } from 'TPPoke/src/app/BO/pokemon';
+import { DataTransfertServiceService } from 'src/app/service/data-transfert-service.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list',
@@ -7,7 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListPage implements OnInit {
 
-  constructor() { }
+   
+    constructor(private router: Router, private dataTransfert: DataTransfertServiceService) {
+
+        // récupére la liste des pokemons
+
+        // donne la liste des pokemons favoris
+        
+
+
+    }
 
   ngOnInit() {
   }
