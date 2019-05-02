@@ -1,9 +1,24 @@
 <ion-header>
-  <ion-toolbar>
-      <ion-title>Liste des pok&eacute;mons</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>Liste des pok&eacute;mons</ion-title>
+    </ion-toolbar>
 </ion-header>
-
 <ion-content>
-
+    <ion-content>
+        <ion-row>
+            <ion-col class="col"> #</ion-col>
+            <ion-col class="col">Nom</ion-col>
+            <ion-col class="col">Ajouter/Supprimer des favoris</ion-col>
+        </ion-row>
+        <ion-row *ngFor="let data of listPokemon">
+            <ion-col class="col"></ion-col>
+            <ion-col class="col">{{data?.name}}</ion-col>
+            <ion-col class="col">{{data?.url}}</ion-col>
+            <!-- </ion-col>
+        <ion-label *ngIf="inListFavoris(data.name) == true " color="Alert">Supprimer aux Favoris</ion-label>
+        <ion-label *ngIf="inListFavoris(data.url) == false " color="Info">Ajouter aux Favoris</ion-label>
+    </ion-chip>
+    </ion-col>-->
+        </ion-row>
+    </ion-content>
 </ion-content>
